@@ -1,0 +1,351 @@
+/* General  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14pt;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #0D1821;
+}
+
+
+
+/* Headings */
+h1, h2 {
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+}
+h2 {
+    font-size: 30px;
+}
+
+
+
+
+/* Main Wrapper */
+#mainWrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+/* Left Panel - Background Image */
+#leftPanel {
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#leftPanel img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+
+
+/* Right Panel - Dark Background */
+#rightPanel {
+    width: 50vw;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #0D1821;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /*starts from the top */
+    padding-top: 5px;
+    gap: 20px;
+}
+
+
+
+/* Access Menu, Sign Up & Login  */
+#accessMenu, #signUp, #login #editDetails{
+    min-width: 30vw;
+    padding-top: 10vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* SETTINGS */
+#Settings {
+    min-width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#Settings h2{
+    color: #0D1821;
+    text-decoration: underline;
+}
+
+
+
+/* Header Title */
+#headerTitle {
+    background-color: #0D1821;
+    font-size: 80px;
+    width: 100%;
+    text-align: center;
+    top: 0;
+    right: 0;
+    color: white;
+    padding: 10px 0;
+}
+
+
+
+/*story*/ 
+#story-text {
+    height: 30vh;
+    min-width: 30vw;
+    overflow: auto;  
+
+}
+
+
+/* Card Styling */
+.card {
+    min-width: 30vw;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    background-color: #788475;
+    border: 3px solid black;
+    padding: 5px;
+    box-shadow: 10px 10px 5px black;
+}
+
+
+
+
+/* Card Header */
+.cardHeader {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    background-color: #8DAA91;
+}
+
+
+
+
+
+/* Card Header Title */
+.cardHeaderTitle {
+    margin: 0;
+    color: black;
+    font-size: 200%;
+}
+
+
+
+/* Card Body */
+.cardBody {
+    padding: 15px;
+    text-align: left;
+}
+
+.cardBody label {
+    font-family: Arial, sans-serif;
+    color: white;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.cardBody input {
+    width: 100%;
+    border: 2px solid #0D1821;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f5f5f5;
+}
+
+
+
+
+
+/* Card Footer */
+.cardFooter {
+    text-align: right;
+    padding: 15px;
+    }
+
+.cardFooter button {
+    width: 45%;
+}
+
+
+
+
+/* Buttons */
+.btn, .btnAction {
+    background-color: #788475;
+    border: 2px solid #0D1821;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: clamp(15px, 5vmin, 30px);
+    font-family: "Bebas Neue", sans-serif;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn:hover, .btnAction:hover {
+    box-shadow: 0 12px 16px rgba(0,0,0,0.24), 0 17px 50px rgba(0,0,0,0.19);
+}
+
+.btn:active, .btnAction:active {
+    background-color: #8DAA91;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+}
+
+
+
+
+/* Background Color Classes */
+.bg-light-green {
+    background-color: #8DAA91;
+}
+
+.bg-dark-green {
+    background-color: #788475;
+}
+
+.bg-primary {
+    background-color: #5da271;
+}
+
+.bg-secondary {
+    background-color: #384d48;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*INVENTORY*/
+#inventory-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    width: 100%;
+    margin: 5px;
+}
+.inventory-box {
+    font-size: 200%;
+    width: calc(25% - 10px);
+    max-width: 60px;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-color: grey;
+    border: 3px solid navy;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    /*background-image: url('../images/screwdriver.png');*/
+
+    background-size: cover;
+    background-position: center;
+}
+.inventory-box:hover {
+    background-color: #384d48;
+    border-color: white;
+}
+
+
+
+
+/*OPTIONS*/
+#options {
+    background-color: black;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+}
+#options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin: 5px;
+}
+.option-box {
+    flex-basis: calc(50% - 20px);
+    height: 30px;
+    color: black;
+    background-color: grey;
+    border: 3px solid navy;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.option-box:hover {
+    background-color: #384d48;
+}
+
+
+
+
+
+
+/* Responsiveness */
+@media (max-width: 995px) {
+    #leftPanel {
+        display: none;
+    }
+    #rightPanel {
+        width: 100vw;
+    }
+}
+
+@media (max-height: 600px) {
+    .buttons {
+        display: inline-block;
+    }
+}
+
+
+
